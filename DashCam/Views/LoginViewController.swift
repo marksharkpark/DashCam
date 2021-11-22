@@ -27,9 +27,11 @@ class LoginViewController: UIViewController {
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                 if let e = error {
                     let message = e.localizedDescription
-                    let alert = UIAlertController(title: "Oh Boy!", message: message, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Oh no!", message: message, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
+                    self.emailTextField.text?.removeAll() // erasing entry
+                    self.passwordTextField.text?.removeAll() // erasing entry
                 } else {
                     self.performSegue(withIdentifier: "LoginSegue", sender: self)
                 }
@@ -45,9 +47,11 @@ class LoginViewController: UIViewController {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
                     let message = e.localizedDescription
-                    let alert = UIAlertController(title: "Oh Boy!", message: message, preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Oh no!", message: message, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Try Again", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
+                    self.emailTextField.text?.removeAll() // erasing entry
+                    self.passwordTextField.text?.removeAll() // erasing entry
                 } else {
                     self.performSegue(withIdentifier: "LoginSegue", sender: self)
                 }
