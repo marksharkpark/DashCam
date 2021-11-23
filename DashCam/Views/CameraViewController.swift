@@ -7,12 +7,22 @@
 
 import Foundation
 import UIKit
-import Firebase
+import MobileCoreServices
+import AVKit
 
 class CameraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    
+    extension CameraViewController: UIImagePickerControllerDelegate{
+        
+    }
+    
+    extension CameraViewController: UINavigationControllerDelegate{
+        
     }
 }

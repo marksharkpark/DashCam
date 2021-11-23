@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        emailTextField.layer.cornerRadius = 22
+        signInButton.layer.cornerRadius = 22
+        registerButton.layer.cornerRadius = 22
+        passwordTextField.layer.cornerRadius = 22
     }
     
     @IBAction func signInButtonPressed(_ sender: Any) {
