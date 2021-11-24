@@ -17,6 +17,14 @@ class CameraViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    extension PlayVideoViewController: UIImagePickerControllerDelegate{
+        
+    }
+    
+    extension PlayVideoViewController: UINavigationControllerDelegate {
+        
+    }
+    
     
     extension CameraViewController: UIImagePickerControllerDelegate{
         

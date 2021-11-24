@@ -124,20 +124,46 @@
                     <view key="view" contentMode="scaleToFill" id="i2z-3I-2yO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-Hf-jLi">
+                                <rect key="frame" x="115" y="326.5" width="184" height="189"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HR5-bo-XsZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="c09-pD-ne7"/>
+                                            <constraint firstAttribute="height" constant="71" id="isS-HK-eNJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Play Video"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iK-xN-cOE">
+                                        <rect key="frame" x="0.0" y="118" width="184" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="H5c-10-Cbq"/>
+                                            <constraint firstAttribute="width" constant="184" id="rTt-Rj-106"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Record Current Drive"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jVa-Hp-de0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5Rd-Hf-jLi" firstAttribute="centerX" secondItem="i2z-3I-2yO" secondAttribute="centerX" id="4NJ-fX-LFj"/>
+                            <constraint firstItem="5Rd-Hf-jLi" firstAttribute="centerY" secondItem="i2z-3I-2yO" secondAttribute="centerY" id="ioo-v8-cwi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Y38-TH-5Ed"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcQ-Jm-H7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1664" y="68"/>
+            <point key="canvasLocation" x="1230.4347826086957" y="-244.41964285714283"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
