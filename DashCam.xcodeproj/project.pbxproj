@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2526F14C838BA3C395294295 /* Pods_DashCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2B4008E46E0F428331C57C4 /* Pods_DashCam.framework */; };
 		A91100BA274C2B8500F868F8 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91100B9274C2B8500F868F8 /* CameraViewController.swift */; };
+		A951C04C274EDADE00D4FC31 /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A951C04B274EDADE00D4FC31 /* PlayVideoViewController.swift */; };
 		A974BF15274ED032004E9E80 /* VideoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A974BF14274ED032004E9E80 /* VideoHelper.swift */; };
 		A99A93EE272C64CF0061A7BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99A93ED272C64CF0061A7BC /* AppDelegate.swift */; };
 		A99A93F0272C64CF0061A7BC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99A93EF272C64CF0061A7BC /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		957C28B070FD7CFE8E6C7951 /* Pods-DashCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashCam.release.xcconfig"; path = "Target Support Files/Pods-DashCam/Pods-DashCam.release.xcconfig"; sourceTree = "<group>"; };
 		A91100B9274C2B8500F868F8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A951C04B274EDADE00D4FC31 /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
 		A974BF14274ED032004E9E80 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
 		A99A93EA272C64CF0061A7BC /* DashCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99A93ED272C64CF0061A7BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				A99A93F1272C64CF0061A7BC /* LoginViewController.swift */,
 				A91100B9274C2B8500F868F8 /* CameraViewController.swift */,
 				A974BF14274ED032004E9E80 /* VideoHelper.swift */,
+				A951C04B274EDADE00D4FC31 /* PlayVideoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				A99A93F8272C64CF0061A7BC /* DashCam.xcdatamodeld in Sources */,
 				A974BF15274ED032004E9E80 /* VideoHelper.swift in Sources */,
 				A99A93EE272C64CF0061A7BC /* AppDelegate.swift in Sources */,
+				A951C04C274EDADE00D4FC31 /* PlayVideoViewController.swift in Sources */,
 				A99A93F0272C64CF0061A7BC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
