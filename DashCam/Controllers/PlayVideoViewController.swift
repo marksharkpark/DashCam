@@ -30,7 +30,22 @@ class PlayVideoViewController: UIViewController{
 }
 
 extension PlayVideoViewController: UIImagePickerControllerDelegate{
-  
+    
+    // Retrieving media type of selected media and URL while ensuring it is an actual video.
+    // Then we dismiss the image picker and create an AVPlayerViewController to play the media.
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]){
+        guard
+            let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String, mediaType == (kUTTypeMovie as String), let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL
+            else{
+                return
+            }
+        dismiss(animated: true){
+            let player = AVPlayer(url: url)
+            let vcPlayer = AVPlayerViewController()
+            vcPlayer.player = player
+            self.present(vcPlayer, animated: true, completion: nil)
+        }
+    }
 }
 
 extension PlayVideoViewController: UINavigationControllerDelegate {
