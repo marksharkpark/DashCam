@@ -17,12 +17,13 @@ class CameraViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    extension CameraViewController: UIImagePickerControllerDelegate{
-        
+    @IBAction func playVideoPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "PlayVideo", sender: self)
     }
     
-    extension CameraViewController: UINavigationControllerDelegate{
-        
+    
+    @IBAction func recordDrivePressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "RecordVideo", sender: self)
     }
+    
 }

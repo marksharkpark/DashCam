@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c2c-8T-vUh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="DashCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="149" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-n6-97m">
+                                <rect key="frame" x="61" y="177.5" width="292" height="541.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-fg-o8T">
+                                        <rect key="frame" x="40.5" y="0.0" width="211.5" height="44.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="42" translatesAutoresizingMaskIntoConstraints="NO" id="60v-hY-Tal">
+                                                <rect key="frame" x="0.0" y="0.0" width="211.5" height="44.5"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Dash Cam">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="42" name="Copperplate-Bold"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="I8O-MY-evA">
+                                        <rect key="frame" x="0.0" y="193.5" width="292" height="93"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRC-RZ-BAz" userLabel="Login Text Field">
+                                                <rect key="frame" x="0.0" y="0.0" width="292" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="DY9-XT-dwt"/>
+                                                    <constraint firstAttribute="width" constant="292" id="JGx-fe-gPf"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrK-6i-m1J" userLabel="Login Text Field">
+                                                <rect key="frame" x="0.0" y="53" width="292" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="292" id="8Yc-yn-NFS"/>
+                                                    <constraint firstAttribute="height" constant="40" id="vLP-9F-O2Q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="o7b-wa-g6S">
+                                        <rect key="frame" x="63.5" y="435.5" width="165" height="106"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fW-Eq-nXb">
+                                                <rect key="frame" x="0.0" y="0.0" width="165" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="Oct-jU-oOc"/>
+                                                    <constraint firstAttribute="height" constant="40" id="fGc-yl-d9m"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xFn-0A-ttH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-eZ-L5N">
+                                                <rect key="frame" x="0.0" y="66" width="165" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="165" id="Irv-QN-x4a"/>
+                                                    <constraint firstAttribute="height" constant="40" id="M7Q-LF-ToO"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Register">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWq-Uu-x4Z"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="6Kx-n6-97m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ex2-vf-DyK"/>
+                            <constraint firstItem="6Kx-n6-97m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nmc-Ul-e6p"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="77r-Tm-9Cy"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="pRC-RZ-BAz" id="nBf-ea-kjW"/>
+                        <outlet property="passwordTextField" destination="lrK-6i-m1J" id="0bS-P1-Tnf"/>
+                        <outlet property="registerButton" destination="8jt-eZ-L5N" id="ctI-a8-qZG"/>
+                        <outlet property="signInButton" destination="2fW-Eq-nXb" id="Y46-fu-QjN"/>
+                        <segue destination="G4E-hm-5CB" kind="show" identifier="LoginSegue" id="fwU-eF-UTv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="67.633928571428569"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="5Ou-UF-wn7">
+            <objects>
+                <viewController id="G4E-hm-5CB" customClass="CameraViewController" customModule="DashCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i2z-3I-2yO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="47" translatesAutoresizingMaskIntoConstraints="NO" id="5Rd-Hf-jLi">
+                                <rect key="frame" x="115" y="353.5" width="184" height="189"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HR5-bo-XsZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="184" id="c09-pD-ne7"/>
+                                            <constraint firstAttribute="height" constant="71" id="isS-HK-eNJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Play Video">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playVideoPressed:" destination="G4E-hm-5CB" eventType="touchUpInside" id="hel-G9-okF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iK-xN-cOE">
+                                        <rect key="frame" x="0.0" y="118" width="184" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="H5c-10-Cbq"/>
+                                            <constraint firstAttribute="width" constant="184" id="rTt-Rj-106"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Record Current Drive">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="recordDrivePressed:" destination="G4E-hm-5CB" eventType="touchUpInside" id="NLz-7I-QgT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jVa-Hp-de0"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5Rd-Hf-jLi" firstAttribute="centerX" secondItem="i2z-3I-2yO" secondAttribute="centerX" id="4NJ-fX-LFj"/>
+                            <constraint firstItem="5Rd-Hf-jLi" firstAttribute="centerY" secondItem="i2z-3I-2yO" secondAttribute="centerY" id="ioo-v8-cwi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y38-TH-5Ed">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rYQ-f2-Jtk"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="k5T-9g-rVc" kind="show" identifier="RecordVideo" id="2YD-Y5-rzU"/>
+                        <segue destination="TFh-C8-Krb" kind="show" identifier="PlayVideo" id="3Pr-Za-mZl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JcQ-Jm-H7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702.898550724638" y="67.633928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hqd-mb-O9s">
+            <objects>
+                <viewController id="k5T-9g-rVc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NiY-Vf-MM4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="BTF-v9-3ju"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eVs-fd-8Vj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99F-wu-RXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3872.4637681159425" y="484.82142857142856"/>
+        </scene>
+        <!--Play Video View Controller-->
+        <scene sceneID="lXe-3u-Jht">
+            <objects>
+                <viewController id="TFh-C8-Krb" customClass="PlayVideoViewController" customModule="DashCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqq-9I-gk6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SyM-mJ-6xX">
+                                <rect key="frame" x="107" y="423" width="200" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsE-Ca-Emg">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="aTK-Il-vcl"/>
+                                            <constraint firstAttribute="height" constant="50" id="gVA-r6-lwd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="View Photo Album">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loadPhotoAlbum:" destination="TFh-C8-Krb" eventType="touchUpInside" id="0Wb-hB-1PO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a0J-Yj-wEg"/>
+                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="SyM-mJ-6xX" firstAttribute="centerY" secondItem="cqq-9I-gk6" secondAttribute="centerY" id="cIJ-r5-pcc"/>
+                            <constraint firstItem="SyM-mJ-6xX" firstAttribute="centerX" secondItem="cqq-9I-gk6" secondAttribute="centerX" id="t4l-us-ojQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LUE-Oo-NE5">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ecI-ob-07M"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="niA-VI-n9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3875.36231884058" y="-273.21428571428572"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3wF-WP-Lw8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c2c-8T-vUh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="wsd-Ij-Yoz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="l4G-iG-JSK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="leF-2R-i99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
