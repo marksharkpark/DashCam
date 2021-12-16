@@ -15,6 +15,7 @@ class PlayVideoViewController: UIViewController{
         super.viewDidLoad()
         // Additional Setup
 //        loadVideoPlayer()
+        self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func loadPhotoAlbum(_ sender: Any) {

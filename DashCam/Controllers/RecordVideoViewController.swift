@@ -15,6 +15,7 @@ class RecordVideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Additional Set-up
+        self.hideKeyboardWhenTappedAround()
     }
     // Accesses .camera as image picker to open in built in camera mode 
     @IBAction func recordVideoPressed(_ sender: Any) {

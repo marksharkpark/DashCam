@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
         emailTextField.layer.cornerRadius = 22
         signInButton.layer.cornerRadius = 22
         registerButton.layer.cornerRadius = 22
@@ -64,3 +65,14 @@ class LoginViewController: UIViewController {
     }
 }
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    
+    @objc func dismissKeyboard(){
+        view.endEditing(true)
+    }
+}
