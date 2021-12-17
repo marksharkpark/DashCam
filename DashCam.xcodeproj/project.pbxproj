@@ -413,6 +413,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = DashCam;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow Camera to Record";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow Microphone for Audio";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow to save recorded drive to your photos album.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -446,6 +447,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = DashCam;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow Camera to Record";
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow Microphone for Audio";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please allow to save recorded drive to your photos album.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
