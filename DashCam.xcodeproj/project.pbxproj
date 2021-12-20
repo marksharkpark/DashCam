@@ -20,6 +20,7 @@
 		A99A93FA272C64D30061A7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99A93F9272C64D30061A7BC /* Assets.xcassets */; };
 		A99A93FD272C64D30061A7BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99A93FB272C64D30061A7BC /* LaunchScreen.storyboard */; };
 		A9A1E0A82746EB7F00B7C079 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A1E0A72746EB7F00B7C079 /* GoogleService-Info.plist */; };
+		A9DAD45D27711AAB00E68105 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DAD45C27711AAB00E68105 /* ResetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A99A93FC272C64D30061A7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A99A93FE272C64D30061A7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9A1E0A72746EB7F00B7C079 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9DAD45C27711AAB00E68105 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		D2B4008E46E0F428331C57C4 /* Pods_DashCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DashCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7563E126E9474432021336F /* Pods-DashCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DashCam.debug.xcconfig"; path = "Target Support Files/Pods-DashCam/Pods-DashCam.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				A974BF14274ED032004E9E80 /* VideoHelper.swift */,
 				A951C04B274EDADE00D4FC31 /* PlayVideoViewController.swift */,
 				A9746D18275AE6D9009AA5E7 /* RecordVideoViewController.swift */,
+				A9DAD45C27711AAB00E68105 /* ResetPasswordViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DAD45D27711AAB00E68105 /* ResetPasswordViewController.swift in Sources */,
 				A99A93F2272C64CF0061A7BC /* LoginViewController.swift in Sources */,
 				A91100BA274C2B8500F868F8 /* CameraViewController.swift in Sources */,
 				A99A93F8272C64CF0061A7BC /* DashCam.xcdatamodeld in Sources */,

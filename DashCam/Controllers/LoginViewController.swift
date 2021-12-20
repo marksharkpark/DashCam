@@ -25,6 +25,10 @@ class LoginViewController: UIViewController {
         passwordTextField.layer.cornerRadius = 22
     }
     
+    @IBAction func resetPasswordPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "PasswordReset", sender: self)
+        
+    }
     @IBAction func signInButtonPressed(_ sender: Any) {
         // Optional chaining
         if let email = emailTextField.text,  let password = passwordTextField.text{

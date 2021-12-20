@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="149" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-n6-97m">
-                                <rect key="frame" x="61" y="177.5" width="292" height="541.5"/>
+                                <rect key="frame" x="61" y="152.5" width="292" height="591"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-fg-o8T">
                                         <rect key="frame" x="40.5" y="0.0" width="211.5" height="44.5"/>
@@ -38,7 +38,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="I8O-MY-evA">
-                                        <rect key="frame" x="0.0" y="193.5" width="292" height="93"/>
+                                        <rect key="frame" x="0.0" y="193.5" width="292" height="142.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRC-RZ-BAz" userLabel="Login Text Field">
                                                 <rect key="frame" x="0.0" y="0.0" width="292" height="40"/>
@@ -58,10 +58,33 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nau-lf-9cE">
+                                                <rect key="frame" x="0.0" y="106" width="292" height="36.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36.5" id="gy9-qf-IOx"/>
+                                                    <constraint firstAttribute="width" constant="292" id="wYN-6c-54c"/>
+                                                </constraints>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Forgot Username or Password">
+                                                            <attributes>
+                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                <font key="NSFont" metaFont="system" size="22"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetPasswordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OC-up-4yT"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="o7b-wa-g6S">
-                                        <rect key="frame" x="63.5" y="435.5" width="165" height="106"/>
+                                        <rect key="frame" x="63.5" y="485" width="165" height="106"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fW-Eq-nXb">
                                                 <rect key="frame" x="0.0" y="0.0" width="165" height="40"/>
@@ -114,11 +137,75 @@
                         <outlet property="registerButton" destination="8jt-eZ-L5N" id="ctI-a8-qZG"/>
                         <outlet property="signInButton" destination="2fW-Eq-nXb" id="Y46-fu-QjN"/>
                         <segue destination="G4E-hm-5CB" kind="show" identifier="LoginSegue" id="fwU-eF-UTv"/>
+                        <segue destination="0ve-3K-YWJ" kind="show" identifier="PasswordReset" id="UrB-la-JV5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.1304347826087" y="67.633928571428569"/>
+            <point key="canvasLocation" x="1129" y="68"/>
+        </scene>
+        <!--Reset Password View Controller-->
+        <scene sceneID="Gbz-gz-jn1">
+            <objects>
+                <viewController id="0ve-3K-YWJ" customClass="ResetPasswordViewController" customModule="DashCam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hMK-nd-guA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="104" translatesAutoresizingMaskIntoConstraints="NO" id="itj-Ke-LES">
+                                <rect key="frame" x="33.5" y="256" width="347" height="384"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your email address associated with your account." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4E-Ma-rkd">
+                                        <rect key="frame" x="0.0" y="0.0" width="347" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="347" id="V33-nL-HK7"/>
+                                            <constraint firstAttribute="height" constant="80" id="pyH-C8-sYW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="shM-P1-w39">
+                                        <rect key="frame" x="27.5" y="184" width="292" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8DL-tC-U5I"/>
+                                            <constraint firstAttribute="width" constant="292" id="Y8l-iM-7Jb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnu-g5-zdX">
+                                        <rect key="frame" x="91.5" y="328" width="164" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="3VW-8c-sJk"/>
+                                            <constraint firstAttribute="width" constant="164" id="q4Z-Gt-XH8"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Send Email">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sendEmailButton:" destination="0ve-3K-YWJ" eventType="touchUpInside" id="HHQ-hp-MFd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PZ5-v3-ius"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="itj-Ke-LES" firstAttribute="centerY" secondItem="hMK-nd-guA" secondAttribute="centerY" id="FbH-nj-EFn"/>
+                            <constraint firstItem="itj-Ke-LES" firstAttribute="centerX" secondItem="hMK-nd-guA" secondAttribute="centerX" id="weH-UK-D9R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iKz-GC-o8A"/>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="shM-P1-w39" id="wVD-gI-iz3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dEg-ys-Oex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2273.913043478261" y="-573.21428571428567"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="5Ou-UF-wn7">
@@ -282,7 +369,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="leF-2R-i99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="67.633928571428569"/>
+            <point key="canvasLocation" x="88" y="68"/>
         </scene>
     </scenes>
     <resources>
