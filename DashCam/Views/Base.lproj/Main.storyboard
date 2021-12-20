@@ -179,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JcQ-Jm-H7f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2702.898550724638" y="67.633928571428569"/>
+            <point key="canvasLocation" x="3388" y="68"/>
         </scene>
         <!--Record Video View Controller-->
         <scene sceneID="hqd-mb-O9s">
@@ -189,26 +189,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfw-xD-2MT">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aJo-u9-G2I">
                                 <rect key="frame" x="107" y="423" width="200" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Record">
-                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="recordVideoPressed:" destination="k5T-9g-rVc" eventType="touchUpInside" id="v5A-cV-FEW"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfw-xD-2MT">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7bc-Gk-CMZ"/>
+                                            <constraint firstAttribute="width" constant="200" id="PFb-eQ-QjJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Record">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="recordVideoPressed:" destination="k5T-9g-rVc" eventType="touchUpInside" id="v5A-cV-FEW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BTF-v9-3ju"/>
                         <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aJo-u9-G2I" firstAttribute="centerY" secondItem="NiY-Vf-MM4" secondAttribute="centerY" id="hV2-Vi-8vz"/>
+                            <constraint firstItem="aJo-u9-G2I" firstAttribute="centerX" secondItem="NiY-Vf-MM4" secondAttribute="centerX" id="lE2-tQ-ZwO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eVs-fd-8Vj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99F-wu-RXL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3872.4637681159425" y="484.82142857142856"/>
+            <point key="canvasLocation" x="4448" y="461"/>
         </scene>
         <!--Play Video View Controller-->
         <scene sceneID="lXe-3u-Jht">
@@ -251,7 +263,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="niA-VI-n9z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3875.36231884058" y="-273.21428571428572"/>
+            <point key="canvasLocation" x="4449" y="-315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3wF-WP-Lw8">

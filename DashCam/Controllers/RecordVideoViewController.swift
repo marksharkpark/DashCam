@@ -20,8 +20,16 @@ class RecordVideoViewController: UIViewController {
     // Accesses .camera as image picker to open in built in camera mode 
     @IBAction func recordVideoPressed(_ sender: Any) {
         VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+        do {
+            let audioSession = AVAudioSession.sharedInstance()
+            try audioSession.setCategory(.playAndRecord, options: [.mixWithOthers, .defaultToSpeaker, .allowBluetooth])
+            try audioSession.setActive(true)
+        } catch {
+            print("Failed to set audio session.")
+        }
     }
     
+    // Saving video alert functionality
     @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject){
         let title = (error == nil) ? "Success" : "Error"
         let message = (error == nil) ? "Video was saved." : "Video failed to save."
@@ -39,7 +47,9 @@ extension RecordVideoViewController : UIImagePickerControllerDelegate {
         dismiss(animated: true, completion: nil)
         
         guard
-            let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String, mediaType == (kUTTypeMovie as String), let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL, UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
+            let mediaType = info[UIImagePickerController.InfoKey.mediaType] as? String,
+                mediaType == (kUTTypeMovie as String),
+                let url = info[UIImagePickerController.InfoKey.mediaURL] as? URL, UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
             else {
                 return 
             }
