@@ -12,9 +12,13 @@ import SwiftUI
 import MobileCoreServices
 
 class RecordVideoViewController: UIViewController {
+    
+    @IBOutlet weak var recordButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Additional Set-up
+        recordButton.imageView?.contentMode = .scaleAspectFit
         self.hideKeyboardWhenTappedAround()
     }
     // Accesses .camera as image picker to open in built in camera mode 
