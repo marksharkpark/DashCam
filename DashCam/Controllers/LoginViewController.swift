@@ -43,6 +43,8 @@ class LoginViewController: UIViewController {
                     self.passwordTextField.text?.removeAll() // erasing entry
                 } else {
                     self.performSegue(withIdentifier: "LoginSegue", sender: self)
+                    self.emailTextField.text?.removeAll() // erasing entry
+                    self.passwordTextField.text?.removeAll() // erasing entry
                 }
             }
         }
@@ -63,6 +65,8 @@ class LoginViewController: UIViewController {
                     self.passwordTextField.text?.removeAll() // erasing entry
                 } else {
                     self.performSegue(withIdentifier: "LoginSegue", sender: self)
+                    self.emailTextField.text?.removeAll() // erasing entry
+                    self.passwordTextField.text?.removeAll() // erasing entry
                 }
             }
         }

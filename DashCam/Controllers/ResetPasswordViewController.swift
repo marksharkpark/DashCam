@@ -31,6 +31,7 @@ class ResetPasswordViewController : UIViewController {
                     let alert = UIAlertController(title:"User found! Please reset your password!", message:"An email has been sent to " + email + ".", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Continue to Login", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
+                    emailAddressTextField.text = ""
                 }
                 
             }
