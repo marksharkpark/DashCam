@@ -21,16 +21,22 @@ class RecordVideoViewController: UIViewController {
         recordButton.imageView?.contentMode = .scaleAspectFit
         self.hideKeyboardWhenTappedAround()
     }
+    
+    func loadRecordVideo(){
+        VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
+    }
+    
     // Accesses .camera as image picker to open in built in camera mode 
     @IBAction func recordVideoPressed(_ sender: Any) {
         VideoHelper.startMediaBrowser(delegate: self, sourceType: .camera)
-        do {
+        // Need to fix.
+     /*   do {
             let audioSession = AVAudioSession.sharedInstance()
             try audioSession.setCategory(.playAndRecord, options: [.mixWithOthers, .defaultToSpeaker, .allowBluetooth])
             try audioSession.setActive(true)
         } catch {
             print("Failed to set audio session.")
-        }
+        } */
     }
     
     // Saving video alert functionality

@@ -14,7 +14,7 @@ class PlayVideoViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Additional Setup
-//        loadVideoPlayer()
+        loadVideoPlayer()
         self.hideKeyboardWhenTappedAround()
     }
     
