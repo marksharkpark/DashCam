@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="120" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-n6-97m">
-                                <rect key="frame" x="57" y="110" width="300" height="622"/>
+                                <rect key="frame" x="39" y="110" width="336.5" height="622"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eXJ-fg-o8T">
-                                        <rect key="frame" x="44.5" y="0.0" width="211.5" height="44.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="336.5" height="44.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="42" translatesAutoresizingMaskIntoConstraints="NO" id="60v-hY-Tal">
-                                                <rect key="frame" x="0.0" y="0.0" width="211.5" height="44.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="336.5" height="44.5"/>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Dash Cam">
+                                                    <fragment content="Ninja dash cam">
                                                         <attributes>
-                                                            <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="NSColor" red="0.41176474089999998" green="0.79215681550000006" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" size="42" name="Copperplate-Bold"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
@@ -38,7 +38,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="I8O-MY-evA">
-                                        <rect key="frame" x="4" y="164.5" width="292" height="162.5"/>
+                                        <rect key="frame" x="22" y="164.5" width="292" height="162.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRC-RZ-BAz" userLabel="Login Text Field">
                                                 <rect key="frame" x="0.0" y="0.0" width="292" height="50"/>
@@ -68,7 +68,7 @@
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?">
-                                                    <color key="titleColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="titleColor" red="0.41176474089999998" green="0.79215681550000006" blue="0.74117654560000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="resetPasswordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OC-up-4yT"/>
@@ -77,7 +77,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="o7b-wa-g6S">
-                                        <rect key="frame" x="0.0" y="447" width="300" height="175"/>
+                                        <rect key="frame" x="18" y="447" width="300" height="175"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fW-Eq-nXb">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="75"/>
@@ -89,7 +89,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Sign In">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
+                                                    <color key="baseBackgroundColor" red="0.27641369047619047" green="1" blue="0.92378826530612246" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="signInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xFn-0A-ttH"/>
@@ -105,7 +105,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="Register">
                                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
+                                                    <color key="baseBackgroundColor" red="0.51372551919999998" green="0.98823523520000001" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yWq-Uu-x4Z"/>
@@ -117,7 +117,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Kx-n6-97m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ex2-vf-DyK"/>
                             <constraint firstItem="6Kx-n6-97m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nmc-Ul-e6p"/>
@@ -154,8 +154,8 @@
                                             <constraint firstAttribute="width" constant="347" id="V33-nL-HK7"/>
                                             <constraint firstAttribute="height" constant="80" id="pyH-C8-sYW"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="23"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <color key="textColor" red="0.51372551919999998" green="0.98823523520000001" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="shM-P1-w39">
@@ -173,6 +173,7 @@
                                             <constraint firstAttribute="height" constant="56" id="3VW-8c-sJk"/>
                                             <constraint firstAttribute="width" constant="164" id="q4Z-Gt-XH8"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.51372551919999998" green="0.98823523520000001" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Send Email">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
@@ -185,7 +186,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PZ5-v3-ius"/>
-                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="itj-Ke-LES" firstAttribute="centerY" secondItem="hMK-nd-guA" secondAttribute="centerY" id="FbH-nj-EFn"/>
                             <constraint firstItem="itj-Ke-LES" firstAttribute="centerX" secondItem="hMK-nd-guA" secondAttribute="centerX" id="weH-UK-D9R"/>
@@ -218,6 +219,7 @@
                                             <constraint firstAttribute="width" constant="184" id="c09-pD-ne7"/>
                                             <constraint firstAttribute="height" constant="71" id="isS-HK-eNJ"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.51372551919999998" green="0.98823523520000001" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Play Video">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
@@ -232,6 +234,7 @@
                                             <constraint firstAttribute="height" constant="71" id="H5c-10-Cbq"/>
                                             <constraint firstAttribute="width" constant="184" id="rTt-Rj-106"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.51372551919999998" green="0.9882352941176471" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Record Current Drive">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
@@ -244,7 +247,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jVa-Hp-de0"/>
-                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.94901961089999998" green="0.94901961089999998" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="5Rd-Hf-jLi" firstAttribute="centerX" secondItem="i2z-3I-2yO" secondAttribute="centerX" id="4NJ-fX-LFj"/>
                             <constraint firstItem="5Rd-Hf-jLi" firstAttribute="centerY" secondItem="i2z-3I-2yO" secondAttribute="centerY" id="ioo-v8-cwi"/>
@@ -286,7 +289,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BTF-v9-3ju"/>
-                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="aJo-u9-G2I" firstAttribute="centerY" secondItem="NiY-Vf-MM4" secondAttribute="centerY" id="hV2-Vi-8vz"/>
                             <constraint firstItem="aJo-u9-G2I" firstAttribute="centerX" secondItem="NiY-Vf-MM4" secondAttribute="centerX" id="lE2-tQ-ZwO"/>
@@ -318,6 +321,7 @@
                                             <constraint firstAttribute="width" constant="200" id="aTK-Il-vcl"/>
                                             <constraint firstAttribute="height" constant="50" id="gVA-r6-lwd"/>
                                         </constraints>
+                                        <color key="tintColor" red="0.51372551919999998" green="0.98823523520000001" blue="0.92549026010000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="View Photo Album">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
@@ -330,7 +334,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="a0J-Yj-wEg"/>
-                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="SyM-mJ-6xX" firstAttribute="centerY" secondItem="cqq-9I-gk6" secondAttribute="centerY" id="cIJ-r5-pcc"/>
                             <constraint firstItem="SyM-mJ-6xX" firstAttribute="centerX" secondItem="cqq-9I-gk6" secondAttribute="centerX" id="t4l-us-ojQ"/>
@@ -369,11 +373,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="RecordingIcon" width="221" height="171.5"/>
-        <systemColor name="systemTealColor">
-            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
