@@ -28,7 +28,7 @@
 		A91100B9274C2B8500F868F8 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A951C04B274EDADE00D4FC31 /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
 		A9746D18275AE6D9009AA5E7 /* RecordVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVideoViewController.swift; sourceTree = "<group>"; };
-		A974BF14274ED032004E9E80 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoHelper.swift; sourceTree = "<group>"; };
+		A974BF14274ED032004E9E80 /* VideoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoHelper.swift; path = ../Controllers/VideoHelper.swift; sourceTree = "<group>"; };
 		A99A93EA272C64CF0061A7BC /* DashCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DashCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99A93ED272C64CF0061A7BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A99A93EF272C64CF0061A7BC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +76,7 @@
 		A91100B6274C2B3F00F868F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A974BF14274ED032004E9E80 /* VideoHelper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,7 +86,6 @@
 			children = (
 				A99A93F1272C64CF0061A7BC /* LoginViewController.swift */,
 				A91100B9274C2B8500F868F8 /* CameraViewController.swift */,
-				A974BF14274ED032004E9E80 /* VideoHelper.swift */,
 				A951C04B274EDADE00D4FC31 /* PlayVideoViewController.swift */,
 				A9746D18275AE6D9009AA5E7 /* RecordVideoViewController.swift */,
 				A9DAD45C27711AAB00E68105 /* ResetPasswordViewController.swift */,
